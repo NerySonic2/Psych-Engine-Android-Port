@@ -1034,9 +1034,7 @@ class PlayState extends MusicBeatState
 					});
 				case 'senpai' | 'roses' | 'thorns':
 					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
-					schoolIntro(doof);
-                           case 'umm':
-				startDialogue(dialoguejson);
+					schoolIntro(doof)
 				default:
 					startCountdown();
 			}
@@ -3954,7 +3952,7 @@ class PlayState extends MusicBeatState
 	public var ratingString:String;
 	public var ratingPercent:Float;
 	public function RecalculateRating() {
-		setOnLuas('score', songScore);
+		setOnLuas('nerysonicportthis', songScore);
 		setOnLuas('misses', songMisses);
 		setOnLuas('ghostMisses', songMisses);
 		setOnLuas('hits', songHits);
